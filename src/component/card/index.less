@@ -1,0 +1,171 @@
+.product-card-box {
+    &:nth-child(3) {
+        .product-card-3 {
+            margin-right: 0;
+            .icon-cart {
+                margin-right: 0;
+            }
+        }
+    }
+    &:nth-child(2) {
+        .product-card-2 {
+            margin-right: 0;
+            .icon-cart {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.product-card {
+    text-align: center;
+    display: inline-block;
+    .preview {
+        position: relative;
+        font-size: 0;
+        padding-bottom: 100%;
+        height: 0;
+    }
+    .product-img {
+        width: 100%;
+        padding: 0;
+        &.placeholder, &.h2-lazyload {
+            box-sizing: border-box;
+            padding: 40% 35%;
+        }
+    }
+    .tag {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 12px;
+        line-height: normal;
+        display: inline-block;
+        background-color: #FF0036;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        transform: scale(0.83);
+        transform-origin: bottom left;
+        padding: 0 5px;
+        border-radius: 2px;
+        white-space: nowrap;
+    }
+    .content {
+        text-align: left;
+    }
+    .item-title {
+        color: #051B28;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 2px;
+        height: 18px;
+        overflow: hidden;
+    }
+    .desc {
+        font-size: 12px;
+        color: #999999;
+        margin-top: 2px;
+        height: 18px;
+    }
+    .info {
+        margin-top: 5px;
+        font-size: 0;
+    }
+    .promote-info {
+        font-size: 12px;
+        color: #fff;
+        background: #FB783B;
+        border-radius: 2px;
+        text-align: center;
+        transform: scale(0.8333);
+        transform-origin: left center;
+        padding: 0 2px;
+        display: none;
+    }
+    .price, .price-label {
+        font-size: 16px;
+        color: #FF610E;
+        font-weight: bold;
+    }
+    .price-label {
+        font-size: 18px;
+        transform: scale(0.88);
+        transform-origin: 0 60%;
+        display: inline-block;
+    }
+    .icon-cart {
+        background: #FF610E;
+        font-size: 0;
+        box-sizing: border-box;
+        border-radius: 12px;
+        text-align: center;
+        float: right;
+        position: relative;
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+        top: 2px;
+        >svg {
+            padding: 5px;
+            width: 12px;
+            height: 12px;
+            fill: #fff;
+        }
+    }
+    &.soldout {
+        .icon-cart {
+            visibility: hidden;
+        }
+        .preview:after {
+            content: "抢光了soldout";
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            color: red;
+            font-weight: 400;
+            height: 16px;
+            line-height: 16px;
+            background: #AA947C;
+            color: #fff;
+            display: inline-block;
+            width: 60%;
+            height: 60%;
+            margin-left: -30%;
+            text-align: center;
+            font-size: 12px;
+            border-radius: 50%;
+            padding-top: 14%;
+            box-sizing: border-box;
+            opacity: 0.9;
+        }
+    }
+}
+
+.product-card {
+    width: 100/325*100%;
+    margin-right: 8/325*100%;
+}
+
+.product-card-3 {
+    width: 100/325*100%;
+    margin-right: 8/325*100%;
+}
+
+.product-card-2 {
+    width: 100/215*100%;
+    margin-right: 8/215*100%;
+}
+
+@media only screen and (max-width: 340px) {
+    .product-card {
+        width: 83px;
+        margin-right: 0;
+    }
+    .brand-tabs-box .h2-tabs .item {
+        font-size: 12px;
+    }
+    .price, .price-label {
+        font-size: 14px !important;
+    }
+}

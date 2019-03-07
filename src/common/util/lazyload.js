@@ -1,7 +1,7 @@
 // the attribute that save image src
 const ATTR_IMAGE_URL = 'data-src';
 // the img's className
-const CLASSNAME = 'h2-lazyload';
+const CLASSNAME = 'fe-lazyload';
 // the unloaded img's selector
 const IMG_SELECTOR = `img[${ATTR_IMAGE_URL}].${CLASSNAME}`;
 // the default rootMargin Y
