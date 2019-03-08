@@ -12,3 +12,7 @@ export const onLoad = (callback) => {
     window.addEventListener('load', run);
   }
 }
+
+export function $(x) {
+  return document.querySelector(x)
+}
